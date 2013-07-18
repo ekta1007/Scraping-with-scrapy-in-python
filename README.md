@@ -17,5 +17,5 @@ For now, all you need to understand this is 3 broad things -:
 3. Writing your spider to extract the items of interest from the webpage.
 
 
-for suggestions, comments, collaboration, rech out to me at ekta1007@gmail.com 
+for suggestions, comments, collaboration, reach out to me at ekta1007@gmail.com 
 
