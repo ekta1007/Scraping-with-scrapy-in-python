@@ -1,4 +1,3 @@
-
 # A baby problem in scraping in python  - will keep this file seperate and add more files in the repository
 
 # For an overview on scrapy - see the official documentation at - 
@@ -6,6 +5,7 @@
 
 # To start a new scrapy project 
 scrapy startproject ebay
+import csv
 
 # This will create the folder structures - ebay-> ebay-> spiders - of this we will modify the items.py file to add the fields that you wnat to extract
 
@@ -45,11 +45,11 @@ class MySpider(BaseSpider):
         print '----'
         print name
   	# writing to a csv file 
-	    mywriter = csv.writer(open("ebaytest.csv", "wb"))
-		head = ("Name", "Price", "urls")
-		mywriter.writerow(head)
-		for i in range(0,len(price2)):
-			mywriter.writerow(name[i],price2[i],allurls[i])
+	mywriter = csv.writer(open("ebaytest.csv", "wb"))
+	head = ("Name", "Price", "urls")
+	mywriter.writerow(head)
+	for i in range(0,len(price2)):
+		ywriter.writerow([name[i],price2[i],allurls[i]])
         print ' My first baby scraping was a success!! '
 		
 		
